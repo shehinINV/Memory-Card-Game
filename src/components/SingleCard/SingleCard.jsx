@@ -2,21 +2,14 @@ import React from 'react'
 import './SingleCard.css';
 import cardData from '../../cardData';
 
-const SingleCard = () => {
+
+const SingleCard = ({card, isFlipped, isMatched, onClick}) => {
+
   return (
-    <div className='card'>
-        {/* { cardData.map((value, id) => (
-            <div className='card-item' key={id}>
-                <div className='card-item-inner'>
-                    <div className='card-item-front'>
-                        <img src={value} alt={value} />
-                    </div>
-                    <div className='card-item-back'>
-                        <h3>{value}</h3>
-                    </div>
-                </div>
-            </div>
-        ))} */}
+    <div className={`card ${isFlipped || isMatched ? 'flipped' : ''}`} onClick={onClick}>
+        <span className='card-content'>
+            {isFlipped || isMatched ? card.value : ''}
+        </span>
     </div>
   )
 }
