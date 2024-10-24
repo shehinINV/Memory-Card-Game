@@ -1,9 +1,10 @@
 import './App.css';
+import CardComponent from './components/CardComponent/CardComponent';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hi Welcome</h1>
+      <CardComponent />
     </div>
   );
 }

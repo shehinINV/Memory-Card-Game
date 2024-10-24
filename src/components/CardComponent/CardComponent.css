@@ -1,0 +1,38 @@
+.card-game {
+    display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;  
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      height: 100vh;
+      padding: 20px;
+      background: linear-gradient(to right, #ee9c4f, #da8e02);
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.card-game h1 {
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+.card-game-container {
+    width: 50%;
+    height: 80vh;
+    background: #ffff;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 20%;
+    margin: 10px;
+    height: 20vh;
+    padding: 10px;
+    align-items: start;
+    background: #da8e02;
+    border-radius: 5px;
+}
