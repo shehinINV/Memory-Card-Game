@@ -10,6 +10,7 @@ const CardComponent = () => {
   const useGameState = () => {
     const [cards, setCards] = useState([]);
     const [moves, setMoves] = useState(0);
+    const [flippedCards, setFlippedCards] = useState([]);
     const [matches, setMatches] = useState(0);
     const [matchedCards, setMatchedCards] = useState([]);
     const [gameDuration, setGameDuration] = useState(0);
@@ -35,7 +36,7 @@ const CardComponent = () => {
 
   const handleCardClick = (card) => {
 
-    if (flippedCards.lenghth === 2 || flippedCards.includes(card)) {
+    if (flippedCards.length === 2 || flippedCards.includes(card)) {
         return;
     }
     const newFlippedCards = [...flippedCards, card];
